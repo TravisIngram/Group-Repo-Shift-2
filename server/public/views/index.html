@@ -6,16 +6,23 @@
 
     <script src="/vendor/angular/angular.min.js"></script>
     <script src="/assets/scripts/client.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
-  <body ng-controller="GreenController">
+  <body ng-controller="GreenController as person">
     <h1>Names Here</h1>
-    <button ng-click ="getInfo()">Create</button>
-    <div ng-repeat="user in usersList">
-      Name:{{ user.personName }},
-      Age:{{user.personAge}},
-      Location:{{user.personLocation}},
-      personBirthplace: {{user.personBirthplace}},
-      Twitter:{{user.personTwitter}}
-    </div>
+    <button ng-click ="person.getInfo()">Create</button>
+    <ul> 
+      <div ng-repeat="people in person.usersList">
+
+        <li>
+          <p>Name:{{ people.personName }},</p>
+          <p>Age:{{people.personAge}},</p>
+          <p>Location:{{people.personLocation}},</p>
+          <p>personBirthplace: {{people.personBirthplace}},</p>
+          <p>Twitter:{{people.personTwitter}}</p>
+        </li>
+
+      </div>
+    </ul>
   </body>
 </html>
