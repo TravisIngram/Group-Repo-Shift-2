@@ -1,5 +1,4 @@
-console.log("person file");
-
+// Reuqire other modules
 var age = require('./age');
 var birthplace = require('./birthplace');
 var location = require('./location');
