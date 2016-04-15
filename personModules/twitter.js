@@ -1,4 +1,3 @@
-// Requiremen
 // Init variables
 var adjectiveList = ['Pistachio', 'Sparkly', 'Banana', 'Nerdy', 'Rainbow',
 'HungryHungry', 'Invisible', 'Magnificent', 'Fancy', 'Lunar', 'Cantankerous',
